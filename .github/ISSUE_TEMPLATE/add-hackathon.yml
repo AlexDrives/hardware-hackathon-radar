@@ -1,0 +1,57 @@
+name: Add a Hardware Hackathon
+description: Submit a new hardware, robotics, or embodied AI hackathon to the radar
+title: "[Add] <Event Name>"
+labels: ["new-event"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Event Name
+      placeholder: e.g. ETH Makeathon 2027
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Official URL
+      placeholder: https://...
+    validations:
+      required: true
+  - type: dropdown
+    id: region
+    attributes:
+      label: Region
+      options:
+        - China
+        - North America
+        - Europe
+        - Global
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: Format
+      options:
+        - in-person
+        - online
+        - hybrid
+    validations:
+      required: true
+  - type: input
+    id: dates
+    attributes:
+      label: Event & Registration Dates
+      placeholder: "Event: 2027-03-14 to 2027-03-16 | Reg: opens 2027-01-15"
+    validations:
+      required: true
+  - type: textarea
+    id: hardware
+    attributes:
+      label: Hardware Provided & Eligibility
+      placeholder: What dev boards, sensors, robots, or travel subsidies are provided? Who can join?
+  - type: textarea
+    id: notes
+    attributes:
+      label: Why is it cool? / Notes
+      placeholder: Anything special about judging criteria, winning project examples, or registration quirks?

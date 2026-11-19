@@ -1,0 +1,26 @@
+name: Update Event Status
+description: Report a deadline change, opened registration, or new link for an existing event
+title: "[Update] <Event ID or Name>"
+labels: ["status-update"]
+body:
+  - type: input
+    id: event_id
+    attributes:
+      label: Event ID (from data/hackathons.json)
+      placeholder: e.g. d-robotics-2026
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Verification Source URL
+      placeholder: https://...
+    validations:
+      required: true
+  - type: textarea
+    id: changes
+    attributes:
+      label: What changed?
+      placeholder: e.g. Registration link is now live at ..., or deadline extended to ...
+    validations:
+      required: true

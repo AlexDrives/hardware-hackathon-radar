@@ -11,7 +11,9 @@ If you are an AI agent asked to expand, verify, or update this repository, follo
 
 ## 2. Repository Structure
 - `README.md`: Human-facing overview, currently-open radar table, categorized hackathon index, and quick links.
+- `CONTRIBUTING.md`: Contribution workflow and copyable handoff prompt for humans & agents.
 - `data/hackathons.json`: Canonical machine-readable dataset. Update this file first whenever adding or refreshing events, then sync `README.md`.
+- `scripts/validate_data.py`: Zero-dependency schema & enum validator (runs automatically in GitHub Actions). Always run `python scripts/validate_data.py` before committing.
 - `docs/d-robotics-2026.md`: Deep dive on the 2026 D-Robotics Hackathon (hardware limits, judge profile, edge-cloud split).
 - `docs/makemit-and-benchmarks.md`: Benchmark analysis of MakeMIT, Build18, MIT Reality Hack, and similar prestigious hardware hackathons.
 - `docs/project-proposals.md`: Product-oriented embodied HMI proposals derived from hardware constraints and narrative design.
